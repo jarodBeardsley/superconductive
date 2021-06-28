@@ -9,7 +9,7 @@ from astropy.time import Time
 import requests
 
 def solar_longitude(time):
-    '''Returns the solar longitude coordinates, given a UTC time'''
+    """Returns the solar longitude coordinates, given a UTC time"""
     try:
         return astropy.coordinates.get_sun(time)
     except Exception as e:
