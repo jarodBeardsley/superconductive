@@ -1,4 +1,4 @@
-"""Executor for the superconductive technical challenge
+"""Driver script for the superconductive technical challenge
 
 author: Jarod Beardsley
 version: 06/28/2021
