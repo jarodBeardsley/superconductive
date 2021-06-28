@@ -9,7 +9,7 @@ def solar_longitude(time):
     try:
         return astropy.coordinates.get_sun(time)
     except Exception as e:
-        print("Something went wrong: " + e)
+        print("Something went wrong: " + str(e))
 
 
 if __name__ == '__main__':
