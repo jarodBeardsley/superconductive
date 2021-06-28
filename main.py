@@ -1,11 +1,15 @@
-# Given a UTC time, return the solar longitude coordinates
+"""Executor for the superconductive technical challenge
+
+author: Jarod Beardsley
+version: 06/28/2021
+"""
 import astropy
 import astropy.coordinates
 from astropy.time import Time
 import requests
 
-
 def solar_longitude(time):
+    '''Returns the solar longitude coordinates, given a UTC time'''
     try:
         return astropy.coordinates.get_sun(time)
     except Exception as e:
@@ -13,8 +17,6 @@ def solar_longitude(time):
 
 
 if __name__ == '__main__':
-    # retrieve data from REST endpoint
-    # data = retrieve()
     times = requests.get("http://127.0.0.1:5000/").text.split(",")
     if len(times) < 2:
         t = Time(times[0], format='isot', scale='utc')
