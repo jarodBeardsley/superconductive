@@ -1,4 +1,4 @@
-# solar_longitude
+## solar_longitude
 
 Basic program to print the solar longitude at given a UTC time, retrieved from an API endpoint.
 
