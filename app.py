@@ -10,4 +10,4 @@ app = Flask(__name__)
 @app.route("/")
 def time():
     """Returns a UTC time in ISO format"""
-    return "1999-01-01 00:00:00.123456789"
+    return "1968-10-01 00:00:00.123456789"
